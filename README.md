@@ -1,16 +1,17 @@
 ## Old Version
+- This project is the result of collaboration with the team
 - https://github.com/jaygajera17/E-commerce-project-springBoot/tree/main
-- issue: everytime connection open close for access database 
+- issue: everytime connection open close for access database
 
 ## New Version ( what's new)
 - Hibernate configuration added( database and tables automatically create when run the project)
 - Service classes provide reusable services throughout project
-- dao classes interact with database 
+- dao classes interact with database
 - bug fixed ( product image, security , etc..)
 - support in both eclipse & intellij ide
-- overall redesign entire code that help reusability. 
+- overall redesign entire code that help reusability.
 - disclaimer: currently working on this branch so there may be some bug related to endpoint, and working on cart logic.
-  
+
 ## Quickstart
 
 1. Clone the repository
@@ -41,7 +42,7 @@ MySQL or MariaDB can be used as the database for this project. The database conn
 
 if you met the error `java.lang.IllegalArgumentException: Could not resolve placeholder 'db.driver' in value "${db.driver}"`, maybe you should change your `mysql-connector-java` version in `pom.xml` file according to your mysql version, don't forget to reload your Maven project.
 
-Having done that, you must create some base data in the database. You can do that by running the `basedata.sql` script on the database. Check out Google for how to do that, because it depends on what tool you are using to access said database. 
+Having done that, you must create some base data in the database. You can do that by running the `basedata.sql` script on the database. Check out Google for how to do that, because it depends on what tool you are using to access said database.
 
 ### Web Directories
 
@@ -62,7 +63,7 @@ When you run the project, the views should be found by Spring Boot and you shoul
 - control the endpoint and also send data to view( we use ModelAndView method)
 - ``` @GetMapping("login")
 	public String adminlogin() {
-		
+
 		return "adminlogin";
 	}```
 - whenever /login url is hit , src->main->webapp-> adminlogin.jsp file execute
